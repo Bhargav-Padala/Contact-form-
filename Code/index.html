@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contact-wrapper">
+        <div class="left-message">
+            <img src="/images/gitam_aero_astro_club_cover-transformed.jpeg" alt="GAAC Logo" class="logo">
+            <h2>Hello from GAAC</h2>
+            <p>Please fill out the form for any issues or inquiries.</p>
+        </div>
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your GITAM Email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+            <p id="form-success" class="hidden">Form submitted successfully!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
